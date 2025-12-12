@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  color: aquamarine;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding:60px 40px 0 40px;
+}
+
+/* begin nav */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.3em;
+  z-index: 100;
+  font-size: 2rem;
+}
+
+.content__item {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px 15px;
+  counter-increment: itemcounter;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+
+nav a:link, nav a:visited {
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover, nav a:active {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: rgb(38, 0, 255);
+  color: black;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+  /* nav eind */
+
+  /* boxrow */
+.boxrow{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 0; 
+}
+
+.box{
+  border: 2px solid rgb(38, 0, 225);
+
+  width: 800px;
+  height: 800px;
+}
+
+  /* display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px; */
+  /* end bowrow */
+
+  /* login and register pages */
+
+  .wrapper{
+    justify-content: center;
+  }
+
+  /* login and register pages end*/
